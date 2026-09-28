@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="418.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controller">
+   <children>
+      <Text fx:id="textCounter" layoutX="157.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="285.13671875" AnchorPane.leftAnchor="157.0" AnchorPane.topAnchor="31.205001831054688">
+         <font>
+            <Font name="Lato Black" size="55.0" />
+         </font>
+      </Text>
+        <Button layoutX="157.0" layoutY="106.0" minHeight="1.0" minWidth="1.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="75.0" prefWidth="78.0" text="1" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+        <Button layoutX="235.0" layoutY="106.0" minHeight="1.0" minWidth="1.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="75.0" prefWidth="78.0" text="2" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+        <Button layoutX="313.0" layoutY="106.0" minHeight="1.0" minWidth="1.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="75.0" prefWidth="78.0" text="3" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+        <Button layoutX="157.0" layoutY="181.0" minHeight="1.0" minWidth="1.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="75.0" prefWidth="78.0" text="4" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+        <Button layoutX="235.0" layoutY="181.0" minHeight="1.0" minWidth="1.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="75.0" prefWidth="78.0" text="5" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+        <Button layoutX="313.0" layoutY="181.0" minHeight="1.0" minWidth="1.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="75.0" prefWidth="78.0" text="6" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+        <Button layoutX="157.0" layoutY="256.0" minHeight="1.0" minWidth="1.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="75.0" prefWidth="78.0" text="7" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+        <Button layoutX="235.0" layoutY="256.0" minHeight="1.0" minWidth="1.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="75.0" prefWidth="78.0" text="8" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+        <Button layoutX="313.0" layoutY="256.0" minHeight="1.0" minWidth="1.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="75.0" prefWidth="78.0" text="9" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+        <Button layoutX="391.0" layoutY="106.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addOperation" prefHeight="56.25" prefWidth="78.0" text="+" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <padding>
+            <Insets top="1.0" />
+         </padding>
+      </Button>
+        <Button layoutX="391.0" layoutY="163.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addOperation" prefHeight="56.25" prefWidth="78.0" text="-" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <padding>
+            <Insets top="1.0" />
+         </padding>
+      </Button>
+        <Button layoutX="391.0" layoutY="220.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addOperation" prefHeight="56.25" prefWidth="78.0" text="/" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <padding>
+            <Insets top="1.0" />
+         </padding>
+      </Button>
+        <Button layoutX="391.0" layoutY="277.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addOperation" prefHeight="53.0" prefWidth="78.0" text="*" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <padding>
+            <Insets top="1.0" />
+         </padding>
+      </Button>
+        <Button layoutX="235.0" layoutY="331.0" minHeight="1.0" minWidth="1.0" mnemonicParsing="false" onAction="#addNumber" prefHeight="75.0" prefWidth="78.0" text="0" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+        <Button layoutX="313.0" layoutY="331.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#calculate" prefHeight="75.0" prefWidth="155.0" text="=" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+        <Button layoutX="157.0" layoutY="331.0" minHeight="1.0" minWidth="1.0" mnemonicParsing="false" onAction="#clear" prefHeight="75.0" prefWidth="78.0" text="C" wrapText="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
