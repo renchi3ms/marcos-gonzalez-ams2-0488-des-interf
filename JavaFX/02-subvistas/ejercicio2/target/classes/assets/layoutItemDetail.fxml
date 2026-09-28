@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
 <VBox fx:id="detailContainer" alignment="TOP_CENTER" prefHeight="300.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.ControllerItemDetail">
@@ -28,6 +29,11 @@
          <VBox.margin>
             <Insets bottom="10.0" left="20.0" right="20.0" top="5.0" />
          </VBox.margin>
-      </Label>
-   </children>
+       </Label>
+       <Circle fx:id="colorCircle" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE">
+          <VBox.margin>
+             <Insets top="10.0" />
+          </VBox.margin>
+       </Circle>
+    </children>
 </VBox>

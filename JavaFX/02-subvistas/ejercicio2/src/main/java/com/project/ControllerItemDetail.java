@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
 public class ControllerItemDetail {
@@ -45,7 +46,12 @@ public class ControllerItemDetail {
     }
 
     public void setColorCircle(String color, Boolean visible) {
-        
+        if (color != null && visible) {
+            colorCircle.setFill(Color.web(color));
+            colorCircle.setVisible(true);
+        } else {
+            colorCircle.setVisible(false);
+        }
     }
 
     public VBox getDetailContainer() {

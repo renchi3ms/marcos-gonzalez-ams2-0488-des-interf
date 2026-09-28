@@ -68,6 +68,13 @@ public class ControllerDesktop implements Initializable{
             detailController.setPlot(plot);
             detailController.setImage(imageFile);
 
+            if (jsonData.has("color")) {
+                String color = jsonData.getString("color");
+                detailController.setColorCircle(color, true);
+            } else {
+                detailController.setColorCircle(null, false);
+            }
+
             vPaneSelectItem.getChildren().add(detailView);
 
         } catch (IOException e) {
