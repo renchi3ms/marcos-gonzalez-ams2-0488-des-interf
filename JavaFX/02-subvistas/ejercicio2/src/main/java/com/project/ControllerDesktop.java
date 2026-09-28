@@ -50,8 +50,18 @@ public class ControllerDesktop implements Initializable{
             Parent detailView = loader.load();
 
             ControllerItemDetail detailController = loader.getController();
+
             String name = jsonData.getString("name");
-            String plot = jsonData.getString("plot");
+            String plot = "";
+            
+            if (jsonData.has("plot")) {
+                plot = jsonData.getString("plot");
+            } else if (jsonData.has("game")) {
+                plot = jsonData.getString("game");
+            } else if (jsonData.has("procesador")) {
+                plot = jsonData.getString("procesador");
+            }
+            
             String imageFile = jsonData.getString("image");
 
             detailController.setName(name);

@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
+import javafx.scene.shape.Circle;
 
 public class ControllerItemDetail {
 
@@ -21,6 +22,9 @@ public class ControllerItemDetail {
 
     @FXML
     private Label labelDetailPlot;
+
+    @FXML
+    private Circle colorCircle;
 
     public void setName(String name) {
         labelDetailName.setText(name);
@@ -38,6 +42,10 @@ public class ControllerItemDetail {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void setColorCircle(String color, Boolean visible) {
+        
     }
 
     public VBox getDetailContainer() {
