@@ -22,8 +22,8 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
 
         UtilsViews.parentContainer.setStyle("-fx-font: 14 arial;");
-        UtilsViews.addView(getClass(), "Desktop", "/assets/layout_desktop.fxml");
-        UtilsViews.addView(getClass(), "Mobile", "/assets/layout_movile.fxml");
+        UtilsViews.addView(getClass(), "Desktop", "/assets/layoutDesktop.fxml");
+        UtilsViews.addView(getClass(), "Mobile", "/assets/layoutMobile.fxml");
 
         Scene scene = new Scene(UtilsViews.parentContainer);
 

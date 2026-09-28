@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="181.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" />
+      <Label prefHeight="98.0" prefWidth="405.0" text="Label">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+   </children>
+</HBox>
