@@ -10,7 +10,7 @@
    <children>
       <AnchorPane fx:id="colorPanel" prefHeight="86.0" prefWidth="400.0" style="-fx-background-color: #4A6FA5;">
          <children>
-            <Label fx:id="labelTitle" layoutX="151.0" layoutY="17.0" text="Label" textFill="WHITE">
+            <Label fx:id="labelTitle" alignment="CENTER" layoutX="20.0" layoutY="17.0" maxWidth="360.0" prefWidth="360.0" text="Label" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
