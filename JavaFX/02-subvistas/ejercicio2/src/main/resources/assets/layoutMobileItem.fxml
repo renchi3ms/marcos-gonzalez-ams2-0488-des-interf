@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -14,10 +16,17 @@
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
             </Label>
             <Button fx:id="buttonBack" layoutX="17.0" layoutY="30.0" mnemonicParsing="false" onAction="#viewBack" text="BACK" />
          </children>
       </AnchorPane>
-      <VBox fx:id="viewList" prefHeight="314.0" prefWidth="400.0" />
+      <ScrollPane prefHeight="316.0" prefWidth="400.0">
+         <content>
+            <VBox fx:id="viewList" prefWidth="400.0" />
+         </content>
+      </ScrollPane>
    </children>
 </VBox>

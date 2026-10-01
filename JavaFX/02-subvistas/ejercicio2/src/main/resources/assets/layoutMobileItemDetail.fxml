@@ -9,17 +9,19 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-
 <VBox fx:id="viewItem" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.ControllerMobileItemDetails">
    <children>
-      <AnchorPane fx:id="colorPanel" prefHeight="93.0" prefWidth="400.0">
+      <AnchorPane prefHeight="86.0" prefWidth="400.0" style="-fx-background-color: #4A6FA5;">
          <children>
-            <Label fx:id="labelTitel" layoutX="151.0" layoutY="21.0" text="Label">
+            <Label fx:id="labelTitel" alignment="CENTER" layoutX="20.0" layoutY="17.0" maxWidth="360.0" prefWidth="360.0" text="Label" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="System Bold" size="36.0" />
+                  <Font name="System Bold" size="30.0" />
                </font>
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
             </Label>
-            <Button fx:id="buttonBack" layoutX="14.0" layoutY="32.0" mnemonicParsing="false" onAction="#viewBack" text="Button" />
+            <Button fx:id="buttonBack" layoutX="17.0" layoutY="30.0" mnemonicParsing="false" onAction="#viewBack" text="BACK" />
          </children>
       </AnchorPane>
       <ImageView fx:id="imgView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
