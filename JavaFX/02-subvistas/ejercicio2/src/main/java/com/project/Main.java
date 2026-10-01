@@ -1,8 +1,6 @@
 package com.project;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -24,6 +22,8 @@ public class Main extends Application {
         UtilsViews.parentContainer.setStyle("-fx-font: 14 arial;");
         UtilsViews.addView(getClass(), "Desktop", "/assets/layoutDesktop.fxml");
         UtilsViews.addView(getClass(), "Mobile", "/assets/layoutMobile.fxml");
+        UtilsViews.addView(getClass(), "MobileItem", "/assets/layoutMobileItem.fxml");
+        UtilsViews.addView(getClass(), "MobileItemDetail", "/assets/layoutMobileItemDetail.fxml");
 
         Scene scene = new Scene(UtilsViews.parentContainer);
 
@@ -48,8 +48,8 @@ public class Main extends Application {
     }
 
     private void _setLayout(int width) {
-        if (width < 600) {
-            UtilsViews.setView("Mobile");
+        if (width < 500) {
+            UtilsViews.setView(UtilsViews.activeMobileView);
         } else {
             UtilsViews.setView("Desktop");
         }

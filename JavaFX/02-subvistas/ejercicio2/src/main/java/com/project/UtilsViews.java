@@ -16,6 +16,7 @@ public class UtilsViews {
 
     public static StackPane parentContainer = new StackPane();
     public static ArrayList<Object> controllers = new ArrayList<>();
+    public static String activeMobileView = "Mobile";
 
     // Add one view to the list
     public static void addView(Class<?> cls, String name, String path) throws Exception {
@@ -63,6 +64,10 @@ public class UtilsViews {
     // Set visible view by its id (viewId)
     public static void setView(String viewId) {
 
+        if (viewId.startsWith("Mobile")) {
+            activeMobileView = viewId;
+        }
+
         ArrayList<Node> list = new ArrayList<>();
         list.addAll(parentContainer.getChildrenUnmodifiable());
 
@@ -83,6 +88,10 @@ public class UtilsViews {
 
     // Set visible view by its id (viewId) with an animation
     public static void setViewAnimating(String viewId) {
+
+        if (viewId.startsWith("Mobile")) {
+            activeMobileView = viewId;
+        }
 
         ArrayList<Node> list = new ArrayList<>();
         list.addAll(parentContainer.getChildrenUnmodifiable());

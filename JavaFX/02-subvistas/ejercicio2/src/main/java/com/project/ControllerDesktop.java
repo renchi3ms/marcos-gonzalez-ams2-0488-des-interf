@@ -40,8 +40,6 @@ public class ControllerDesktop implements Initializable{
 
     private JSONArray jsonInfo;
 
-    private JSONObject currentSelectedJson;
-
     public void showItemDetails(JSONObject jsonData) {
         vPaneSelectItem.getChildren().clear();
 

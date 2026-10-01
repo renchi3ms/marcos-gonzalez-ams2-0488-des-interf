@@ -1,6 +1,9 @@
 com/project/ControllerItem.class
-com/project/Main.class
 com/project/ControllerMobile.class
+com/project/ControllerMobileItem.class
 com/project/ControllerDesktop.class
+com/project/ControllerMobileItemDetails.class
 com/project/ControllerItemDetail.class
 com/project/UtilsViews.class
+com/project/Main.class
+com/project/ControllerMobileItemRow.class
